@@ -1,0 +1,6 @@
+data/
+.venv/
+*.pt
+__pycache__/
+.ipynb_checkpoints/
+run.log

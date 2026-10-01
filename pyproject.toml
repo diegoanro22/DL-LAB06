@@ -1,0 +1,17 @@
+[project]
+name = "dl-lab06"
+version = "0.1.0"
+requires-python = ">=3.11,<3.14"
+dependencies = [
+  "torch", "torchvision", "numpy", "matplotlib", "scikit-learn", "pandas",
+  "thop", "torchinfo", "ipykernel", "nbconvert", "nbformat", "pyarrow",
+]
+
+[[tool.uv.index]]
+name = "pytorch-cu128"
+url = "https://download.pytorch.org/whl/cu128"
+explicit = true
+
+[tool.uv.sources]
+torch = { index = "pytorch-cu128" }
+torchvision = { index = "pytorch-cu128" }
